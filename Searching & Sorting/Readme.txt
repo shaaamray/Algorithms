@@ -1,1 +1,5 @@
-All searching and sorting based algorithms
+       All searching based algorithms
+
+                  QBMISH
+
+Quick  Bubble  Merge  Insertion  Selection  Heap
