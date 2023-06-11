@@ -6,7 +6,7 @@ class Graph:
     def add(self, src, dst, wght):
         self.graph.append([src, dst, wght])
 
-    # will use find-union data structure
+    # will use union-find algorithm or disjoint set data structure
 
     def find(self, parent, node):
         # basically finding the root node of corresponding node
