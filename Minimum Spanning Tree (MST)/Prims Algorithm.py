@@ -24,12 +24,14 @@ class Graph:
         mst_set = [False] * self.nodes
         values[0] = 0
         parent[0] = -1
-
+        
+        # find node with the minimum edge distance
         for i in range(self.nodes):
             u = self.min_node_finder(values, mst_set)
 
             mst_set[u] = True
-
+            
+            #update other nodes values and roots/parent
             for v in range(self.nodes):
                 if self.graph[u][v] > 0 and not mst_set[v] and self.graph[u][v] < values[v]:
                     values[v] = self.graph[u][v]
