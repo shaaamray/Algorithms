@@ -34,6 +34,7 @@ class Graph:
                 if self.graph[u][v] > 0 and not mst_set[v] and self.graph[u][v] < values[v]:
                     values[v] = self.graph[u][v]
                     parent[v] = u
+                    
         mst_cost = 0
         for i in range(1, self.nodes):
             print(parent[i], "-", i, "\t", values[i])
